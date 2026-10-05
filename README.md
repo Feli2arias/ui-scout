@@ -39,12 +39,17 @@ Adapting to match the design system.
 
 ## Install
 
+**Personal install** (available in every project):
+
 ```bash
 mkdir -p ~/.claude/skills/ui-scout
-curl -o ~/.claude/skills/ui-scout/SKILL.md \
+curl -fsSL -o ~/.claude/skills/ui-scout/SKILL.md \
   https://raw.githubusercontent.com/Feli2arias/ui-scout/main/SKILL.md
-/ui-scout
 ```
+
+**Project install** (shared with your team via the repo): run the same commands from the project root, replacing `~/.claude/skills` with `.claude/skills`.
+
+Start a new Claude Code session so the skill is picked up. Claude loads it automatically when the task matches its description, or you can invoke it manually with `/ui-scout`.
 
 ---
 
